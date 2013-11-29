@@ -41,6 +41,6 @@ production:
   database: refinery_database_production
   pool: 5
   username: postgres
-  password: postgres
-  min_messages: warning
+  password: 
+  
 

@@ -5,22 +5,22 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
+group :development, :test, :production do
   gem 'pg'
 end
 
 # gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
 
-#group :development, :test do
-# gem "rspec-rails", ">= 2.8.1"
-#end
+group :development, :test do
+ gem "rspec-rails", ">= 2.8.1"
+end
 
-#group :test do
-# gem "factory_girl_rails", ">= 1.6.0"
-# gem "capybara", ">= 1.1.2"
-# gem "database_cleaner"
-# gem "launchy"
-#end
+group :test do
+ gem "factory_girl_rails", ">= 1.6.0"
+ gem "capybara", ">= 1.1.2"
+ gem "database_cleaner"
+ gem "launchy"
+end
 
 
 # Gems used only for assets and not required
@@ -61,3 +61,6 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.1.0'
 #  gem 'refinerycms-search', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
+
+gem 'rails_12factor', group: :production
+ruby '1.9.3'
